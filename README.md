@@ -12,7 +12,7 @@ A place for the highest members of society to gather and discuss the finer point
 Running / Development
 ======
 
-* You will first need to create a Firebase app at [Firebase](https://firebase.google.com). You will use information from that app (click on 'Add Firebase to your web app') in the `api-keys.ts` (not provided, you will have to create) file as detailed below.
+* You will first need to create a Firebase app at [Firebase](https://firebase.google.com). You will use information from that app (click on 'Add Firebase to your web app' in the Overview panel for needed values) in the `api-keys.ts` (not provided, you will have to create) file as detailed below.
 * Add file `app/api-keys.ts` with following (change the values such as YOUR_API_KEY to those provided by firebase)
 ```
 export var masterFirebaseConfig = {
