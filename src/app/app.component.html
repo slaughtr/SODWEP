@@ -1,4 +1,40 @@
+<div class="columns">
 
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="column is-narrow">
+  <aside class="menu">
+    <p class="menu-label">
+      Puppers
+    </p>
+    <ul class="menu-list">
+      <li><a>Royal Dogs</a></li>
+      <li><a>All Dogs</a></li>
+    </ul>
+    <p class="menu-label">
+      Poop Tracking
+    </p>
+    <ul class="menu-list">
+      <li><a>Poops</a></li>
+      <li>
+        <a class="is-active" style="width: 75px;">Where the poop at?</a>
+        <ul>
+          <li><a>New Poops</a></li>
+          <li><a>All Poops</a></li>
+        </ul>
+      </li>
+    </ul>
+    <p class="menu-label">
+      Contact
+    </p>
+    <ul class="menu-list">
+      <li><a>Github</a></li>
+      <li><a>LinkedIn</a></li>
+      <li><a>Email</a></li>
+    </ul>
+  </aside>
+</div>
+
+  <div class="column">
+    <router-outlet></router-outlet>
+  </div>
+
 </div>

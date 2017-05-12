@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
-
-import { MaterializeModule } from 'angular2-materialize'
+import * as moment from 'moment';
 
 import { DatabaseService } from './database.service'
 import { routing } from './app.routing';
@@ -35,10 +34,9 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterializeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    routing
+    routing,
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]
