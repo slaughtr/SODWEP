@@ -1,3 +1,54 @@
-<p>
-  member-detail works!
-</p>
+<div class="columns">
+
+  <div class="column is-5">
+    <img src={{dog.imageURL}} alt="">
+  </div>
+
+  <div class="column">
+
+    <nav class="panel">
+      <p class="panel-heading">
+        {{dog.name}} - <small>{{dog.rank}}</small>
+      </p>
+      <a class="panel-block is-active">
+        <span class="panel-icon">
+          <i class="fa fa-book"></i>
+        </span>
+        Breed: {{dog.breed}}
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-book"></i>
+        </span>
+        Age: {{dog.age}}
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-book"></i>
+        </span>
+        Location: {{dog.location}}
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-book"></i>
+        </span>
+        {{dog.bio}}
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fa fa-code-fork"></i>
+        </span>
+        Joined: {{dog.joined}}
+      </a>
+      <div class="panel-block">
+        <button class="button is-primary is-outlined is-fullwidth">
+          Edit {{dog.name}}
+        </button>
+      </div>
+    </nav>
+
+    
+
+  </div>
+
+</div>
