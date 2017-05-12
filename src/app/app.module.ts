@@ -6,14 +6,16 @@ import { HttpModule } from '@angular/http'
 import { MaterializeModule } from 'angular2-materialize'
 
 import { DatabaseService } from './database.service'
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component'
+import { WelcomePageComponent } from './welcome-page/welcome-page.component'
 import { MemberListComponent } from './member-list/member-list.component'
 import { MemberDetailComponent } from './member-detail/member-detail.component'
 
 import { masterFirebaseConfig } from './api-keys'
 import { AngularFireModule } from 'angularfire2'
-import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +28,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     MemberListComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ export const firebaseConfig = {
     MaterializeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    routing
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]
