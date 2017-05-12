@@ -1,0 +1,45 @@
+.is-ancestor {
+  display: flex;
+  flex-wrap: wrap !important;
+  max-width: 92%;
+}
+
+.eachDogTile {
+  margin-right: 5px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  max-height: 200px;
+  align-items: flex-start;
+}
+
+.eachDogTile img {
+  background: radial-gradient(circle at center, rgba(0,0,0,0) 1%, rgba(0,0,0,0.89) 99%);
+  z-index: -1;
+
+}
+
+.imgName {
+  color: white;
+  z-index: 1;
+  position: relative;
+  /*font-size: 42pt;*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Baloo', cursive;
+  margin-left: 6px;
+}
+
+.card-content {
+  background:
+  linear-gradient(
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.95)
+  ), url('https://s3-us-west-2.amazonaws.com/sodwep-pictures/Dog_Bones.jpg');
+  background-size: contain;
+}
+
+.title {
+  margin-right: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Baloo');

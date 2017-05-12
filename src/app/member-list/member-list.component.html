@@ -1,3 +1,25 @@
-<p>
-  member-list works!
-</p>
+<div class="tile is-ancestor">
+  <div *ngFor="let dog of dogs | async" class="eachDogTile">
+    <div class="card columns">
+      <div class="card-image column">
+        <figure class="image">
+          <img src={{dog.imageURL}} alt={{dog.name}}>
+        </figure>
+      </div>
+      <div class="card-content column is-10">
+        <div class="media">
+          <p class="title is-4 imgName">{{dog.name}}</p>
+          <div class="media-content">
+            <p class="subtitle is-6">          {{dog.rank}}</p>
+          </div>
+        </div>
+
+        <div class="content">
+          {{dog.bio}}
+          <br>
+          <small>Joined: {{dog.joined}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
