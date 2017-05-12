@@ -1,23 +1,31 @@
-// // 1. Import the initial variables
-// // @import "../sass/utilities/initial-variables"
-//
-// // 2. Set your own initial variables
-// // Update blue
-// $blue: #72d0eb
-// // Add pink and its invert
-// $pink: #ffb3b3
-// $pink-invert: #fff
-// // Add a serif family
-// $family-serif: "Merriweather", "Georgia", serif
-//
-// // 3. Set the derived variables
-// // Use the new pink as the primary color
-// $primary: $pink
-// $primary-invert: $pink-invert
-// // Use the existing orange as the danger color
-// $danger: $orange
-// // Use the new serif family
-// $family-primary: $family-serif
-//
-// // 4. Import the rest of Bulma
-// @import "../node_modules/bulma"
+ html {
+   background-color: grey;
+ }
+
+ .level {
+   color: white;
+   word-wrap: break-word;
+   word-break: break-all;
+   width: 90%;
+ }
+
+body {
+  background:
+  linear-gradient(
+    rgba(128, 128, 128, 0.45),
+    rgba(40, 40, 40, 0.85)
+  ),
+  url('http://cdn2.irishviews.com/irishviews-cdn/black-and-white/grass-lawn3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-label {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
