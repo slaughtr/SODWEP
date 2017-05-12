@@ -1,0 +1,48 @@
+{
+  "dogs": [{
+      "name" : "Seymour",
+      "rank" : "Alpha",
+      "breed" : "Unknown",
+      "age" : "2",
+      "joined" : "2017-01-01",
+      "location" : "Portland, OR",
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/sodwep-pictures/seymour.jpg",
+      "bio" : "Seymour is a good dog. He likes belly rubs. He likes a lot of things. But the thing he likes most is eating poop. In fact, he likes it so much he even made a society of the highest order of poop-eating-loving dogs. As Alpha Dog of the Society of Dogs Who Eat Poop, he is responsible for setting the example of poop eating for dogs everywhere."
+    }, {
+      "name" : "Claudia",
+      "rank" : "Right Paw",
+      "breed" : "Pug",
+      "age" : "6",
+      "joined" : "2017-01-02",
+      "location" : "Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch, Wales",
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/sodwep-pictures/right_paw.png",
+      "bio" : "Claudia is a refined dog. She has amazing birthday parties, every day. At these parties, the primary entertainment is poop eating. Seymour was so astounded by her commitment that he immediately made her his Right Paw when she joined. She is also the unofficial SODWEP party/event planner."
+    }, {
+      "name" : "Bully",
+      "rank" : "Left Paw",
+      "breed" : "Pit Bull",
+      "age" : "4",
+      "joined" : "2017-02-17",
+      "location" : "Detroit, MI",
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/sodwep-pictures/Bully-Dog-psd40120.png",
+      "bio" : "Despite his name, Bully is no bully. He's a fun-loving, snuggly, and especially farty dog. He loves eating cat poop the most, which is fortunate for him as there is a large feral cat population in Detroit. He rose through the ranks quickly after joining, as Seymour was particularly impressed by the power of his poots."
+    }, {
+      "name" : "Spot",
+      "rank" : "Feral",
+      "breed" : "Ceramic",
+      "age" : "110",
+      "joined" : "04-01-2017",
+      "location" : "Goodwill",
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/sodwep-pictures/feral.png",
+      "bio" : "Spot has no spots and Spot is also not a real dog. Spot doesn't even eat poop. Seymour banned spot as soon as he realized the impostor was made of ceramic."
+    }, {
+      "name" : "Jessica",
+      "rank" : "Mongrel",
+      "breed" : "Skateboarding Dog",
+      "age" : "1",
+      "joined" : "2017-03-03",
+      "location" : "Cali, Brah",
+      "imageURL" : "https://s3-us-west-2.amazonaws.com/sodwep-pictures/tumblr_mz9hrxWe8y1r5umz8o1_500.png",
+      "bio" : "Jessica is a special skateboarding dog. She uses her advanced form of transportation to quickly find and scoop on sweet spots that contain mad poop. Her general attitude is found to be annoying, but her keen sense of where the sickest-dopest-most-radical poops are to be found has preserved her membership."
+    } ]
+}

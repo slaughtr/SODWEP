@@ -79,10 +79,10 @@ General Objectives
 1. ~~Create Project~~
 2. ~~Create Readme~~
 3. Create Model(s)
-4. Prepopulate datas.json, upload to Firebase
+4. ~~Prepopulate datas.json, upload to Firebase~~
 5. Create Components
-  * Member list
-  * Member detail
+  * ~~Member list~~
+  * ~~Member detail~~
   * Discussion board (probably several components needed here, lower priority)
   * Member new
   * Member edit
