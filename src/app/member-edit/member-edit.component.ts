@@ -44,20 +44,20 @@ export class MemberEditComponent implements OnInit {
         bio: ['', Validators.required],
         imageURL: ['', Validators.required]
       })
-      this.populateEditForm()
+      // this.populateEditForm()
     })
   }
 
-  populateEditForm() {
-    console.log(this.dog)
-    this.dogEditForm.reset({
-  //     name: this.dog.name,
-  //     // breed: this.dog.breed,
-  //     // age: this.dog.age,
-  //     // location: this.dog.location,
-  //     // bio: this.dog.bio,
-  //     // imageURL: this.dog.imageURL
-    })
-  }
+  // populateEditForm() {
+  //   console.log(this.dog)
+  //   this.dogEditForm.reset({
+  // //     name: this.dog.name,
+  // //     // breed: this.dog.breed,
+  // //     // age: this.dog.age,
+  // //     // location: this.dog.location,
+  // //     // bio: this.dog.bio,
+  // //     // imageURL: this.dog.imageURL
+  //   })
+  // }
 
 }

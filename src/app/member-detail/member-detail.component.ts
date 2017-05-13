@@ -24,7 +24,7 @@ export class MemberDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location, private dbService: DatabaseService, private router: Router) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
+    this.route.params.subscribe((urlParameters) => {
       this.dogId = urlParameters['id']
     });
     this.dbService.getDogById(this.dogId).subscribe(foundDog => {
