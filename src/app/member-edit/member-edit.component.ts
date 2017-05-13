@@ -7,6 +7,7 @@ import { Router } from "@angular/router"
 
 import { DatabaseService } from '../database.service'
 import { Dog } from '../dog.model'
+import { MemberDetailComponent } from '../member-detail/member-detail.component'
 
 declare var jQuery: any
 
@@ -21,7 +22,7 @@ export class MemberEditComponent implements OnInit {
   dog: any
   dogEditForm: FormGroup
 
-  constructor(private route: ActivatedRoute, private location: Location, private dbService: DatabaseService, private router: Router, private form: FormBuilder) { }
+  constructor(private route: ActivatedRoute, private location: Location, private dbService: DatabaseService, private router: Router, private form: FormBuilder, private mdc: MemberDetailComponent) { }
 
   ngOnInit() {
     this.route.params.subscribe((urlParameters) => {
@@ -49,7 +50,7 @@ export class MemberEditComponent implements OnInit {
   }
 
   populateEditForm() {
-    console.log(this.dog)
+    // console.log(this.dog)
     this.dogEditForm.reset({
       name: this.dog.name,
       breed: this.dog.breed,
@@ -63,6 +64,8 @@ export class MemberEditComponent implements OnInit {
   submitEdit() {
     var updatedDog: Dog = Object.assign({}, this.dogEditForm.value)
     this.dbService.editDog(this.dogId, updatedDog)
+    this.mdc.toggleEditModal()
   }
+
 
 }
