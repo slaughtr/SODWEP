@@ -60,4 +60,9 @@ export class MemberEditComponent implements OnInit {
     })
   }
 
+  submitEdit() {
+    var updatedDog: Dog = Object.assign({}, this.dogEditForm.value)
+    this.dbService.editDog(this.dogId, updatedDog)
+  }
+
 }

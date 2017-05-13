@@ -1,42 +1,40 @@
-<form [formGroup]="dogEditForm">
-<p>{{dog.name}}</p>
+<form (ngSubmit)="submitEdit()" [formGroup]="dogEditForm">
+  <div class="field">
+    <label class="label">Name</label>
+      <p class="control">
+        <input class="input" type="text" placeholder="Dog name" formControlName="name" required>
+      </p>
+  </div>
 
-<div class="field">
-  <label class="label">Name</label>
-    <p class="control">
-      <input class="input" type="text" placeholder="Dog name" formControlName="name" required>
-    </p>
-</div>
+  <div class="field">
+    <label class="label">Breed</label>
+      <p class="control">
+        <input class="input" type="text" placeholder="Dog breed" formControlName="breed" required>
+      </p>
+  </div>
 
-<div class="field">
-  <label class="label">Breed</label>
-    <p class="control">
-      <input class="input" type="text" placeholder="Dog breed" formControlName="breed" required>
-    </p>
-</div>
+  <div class="field">
+    <label class="label">Age</label>
+      <p class="control">
+        <input class="input" type="number" placeholder="Dog age"  formControlName="age" required>
+      </p>
+  </div>
 
-<div class="field">
-  <label class="label">Age</label>
-    <p class="control">
-      <input class="input" type="number" placeholder="Dog age"  formControlName="age" required>
-    </p>
-</div>
+  <div class="field">
+    <label class="label">Location</label>
+      <p class="control">
+        <input class="input" type="text" placeholder="Dog location"  formControlName="location" required>
+      </p>
+  </div>
 
-<div class="field">
-  <label class="label">Location</label>
-    <p class="control">
-      <input class="input" type="text" placeholder="Dog location"  formControlName="location" required>
-    </p>
-</div>
+  <div class="field">
+    <label class="label">Bio</label>
+      <p class="control">
+        <textarea class="textarea" type="text" placeholder="Tell us some information about you since we can't sniff your butt"  formControlName="bio" required></textarea>
+      </p>
+  </div>
 
-<div class="field">
-  <label class="label">Bio</label>
-    <p class="control">
-      <textarea class="textarea" type="text" placeholder="Tell us some information about you since we can't sniff your butt"  formControlName="bio" required></textarea>
-    </p>
-</div>
-
-<footer class="modal-card-foot">
-  <a class="button is-success">Save changes</a>
-</footer>
+  <footer class="modal-card-foot">
+    <button type="submit" class="button is-dark">Save changes</button>
+  </footer>
 </form>

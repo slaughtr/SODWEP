@@ -18,4 +18,7 @@ export class DatabaseService {
      return this.db.object('/dogs/'+dogId)
    }
 
+   editDog(dogId: string, dogToEdit) {
+     this.dogs.update(dogId, dogToEdit)
+   }
 }
