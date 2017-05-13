@@ -1,8 +1,8 @@
 export const masterFirebaseConfig = {
-    apiKey: "AIzaSyDM1jX5sxDo2kHwenGzjIH04GoikUML1yc",
-    authDomain: "reusable-2b4a3.firebaseapp.com",
-    databaseURL: "https://reusable-2b4a3.firebaseio.com",
-    projectId: "reusable-2b4a3",
-    storageBucket: "reusable-2b4a3.appspot.com",
-    messagingSenderId: "678923544980"
+    apiKey: "AIzaSyA2HOVIocwgKgVgVd2v6FO0jg4Y4A53sYs",
+    authDomain: "putkeyingitignoredumbass.firebaseapp.com",
+    databaseURL: "https://putkeyingitignoredumbass.firebaseio.com",
+    projectId: "putkeyingitignoredumbass",
+    storageBucket: "putkeyingitignoredumbass.appspot.com",
+    messagingSenderId: "886845009009"
   }

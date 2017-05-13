@@ -18,7 +18,7 @@ declare var jQuery: any
 
 export class MemberEditComponent implements OnInit {
   dogId: string
-  dog: Dog
+  dog: any
   dogEditForm: FormGroup
 
   constructor(private route: ActivatedRoute, private location: Location, private dbService: DatabaseService, private router: Router, private form: FormBuilder) { }
@@ -34,7 +34,7 @@ export class MemberEditComponent implements OnInit {
   }
 
   getDogToEdit() {
-    this.dbService.getDogById(this.dogId).subscribe(selectedDog => {
+    this.dbService.getDogById(this.dogId).subscribe((selectedDog) => {
       this.dog = selectedDog
       this.dogEditForm = this.form.group({
         name: ['', Validators.required],
@@ -44,20 +44,20 @@ export class MemberEditComponent implements OnInit {
         bio: ['', Validators.required],
         imageURL: ['', Validators.required]
       })
-      // this.populateEditForm()
+      this.populateEditForm()
     })
   }
 
-  // populateEditForm() {
-  //   console.log(this.dog)
-  //   this.dogEditForm.reset({
-  // //     name: this.dog.name,
-  // //     // breed: this.dog.breed,
-  // //     // age: this.dog.age,
-  // //     // location: this.dog.location,
-  // //     // bio: this.dog.bio,
-  // //     // imageURL: this.dog.imageURL
-  //   })
-  // }
+  populateEditForm() {
+    console.log(this.dog)
+    this.dogEditForm.reset({
+      name: this.dog.name,
+      breed: this.dog.breed,
+      age: this.dog.age,
+      location: this.dog.location,
+      bio: this.dog.bio,
+      imageURL: this.dog.imageURL
+    })
+  }
 
 }
