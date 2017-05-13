@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component'
 import { MemberListComponent } from './member-list/member-list.component'
 import { MemberDetailComponent } from './member-detail/member-detail.component'
+import { MemberEditComponent } from './member-edit/member-edit.component'
 
 const appRoutes: Routes = [
   {

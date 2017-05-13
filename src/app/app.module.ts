@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import * as moment from 'moment';
 
@@ -15,6 +15,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component'
 import { masterFirebaseConfig } from './api-keys'
 import { AngularFireModule } from 'angularfire2'
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { MemberEditComponent } from './member-edit/member-edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,11 +29,13 @@ export const firebaseConfig = {
     AppComponent,
     MemberListComponent,
     MemberDetailComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    MemberEditComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
