@@ -25,4 +25,9 @@ export class DatabaseService {
    newDog(newDog) {
      this.dogs.push(newDog)
    }
+
+   deleteDog(dogToDelete) {
+     var deleteThisDog = this.getDogById(dogToDelete.$key)
+     deleteThisDog.remove()
+   }
 }

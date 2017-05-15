@@ -2,6 +2,10 @@
 
   <div class="column is-5">
     <img src={{dog.imageURL}} alt="">
+
+    <button (click)="toggleDeleteModal()" class="button is-primary is-outlined is-fullwidth deleteButton">
+      Delete {{dog.name}}
+    </button>
   </div>
 
   <div class="column">
@@ -53,7 +57,7 @@
 
 </div>
 
-<div class="modal">
+<div class="modal editModal">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
@@ -62,6 +66,21 @@
     </header>
     <section class="modal-card-body">
       <app-member-edit></app-member-edit>
+    </section>
+
+  </div>
+</div>
+
+<div class="modal deleteModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Delete {{dog.name}}?</p>
+    </header>
+    <section class="modal-card-body">
+      <p>This will make {{dog.name}} a lone wolf, are you SURE?</p>
+      <button (click)="deleteDog(dog)" class="button is-danger is-outlined">DELETE</button><br>
+      <button (click)="toggleDeleteModal()" class="button is-primary is-outlined">Cancel</button>
     </section>
 
   </div>

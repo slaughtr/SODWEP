@@ -18,7 +18,8 @@ declare var jQuery: any
 export class MemberDetailComponent implements OnInit {
   dogId: string
   dog: Dog
-  modalShowing: boolean = false
+  editModalShowing: boolean = false
+  deleteModalShowing: boolean = false
 
 
   constructor(private route: ActivatedRoute, private location: Location, private dbService: DatabaseService, private router: Router) { }
@@ -30,17 +31,34 @@ export class MemberDetailComponent implements OnInit {
         this.dog = foundDog
     })
     })
-    jQuery('.modal').hide()
+    jQuery('.editModal').hide()
+    jQuery('.deleteModal').hide()
   }
 
   toggleEditModal() {
-    if (!this.modalShowing) {
-      this.modalShowing = true
-      jQuery('.modal').show()
+    if (!this.editModalShowing) {
+      this.editModalShowing = true
+      jQuery('.editModal').show()
     } else {
-      this.modalShowing = false
-      jQuery('.modal').hide()
+      this.editModalShowing = false
+      jQuery('.editModal').hide()
     }
+  }
+
+  toggleDeleteModal() {
+    if (!this.deleteModalShowing) {
+      this.deleteModalShowing = true
+      jQuery('.deleteModal').show()
+    } else {
+      this.deleteModalShowing = false
+      jQuery('.deleteModal').hide()
+    }
+  }
+
+  deleteDog(dog) {
+    this.dbService.deleteDog(dog)
+    this.toggleDeleteModal()
+    this.router.navigate(['members'])
   }
 
 }
