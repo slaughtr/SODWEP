@@ -21,4 +21,8 @@ export class DatabaseService {
    editDog(dogId: string, dogToEdit) {
      this.dogs.update(dogId, dogToEdit)
    }
+
+   newDog(newDog) {
+     this.dogs.push(newDog)
+   }
 }
