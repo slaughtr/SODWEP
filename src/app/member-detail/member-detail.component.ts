@@ -26,9 +26,9 @@ export class MemberDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((urlParameters) => {
       this.dogId = urlParameters['id']
-    });
-    this.dbService.getDogById(this.dogId).subscribe(foundDog => {
-      this.dog = foundDog
+      this.dbService.getDogById(this.dogId).subscribe(foundDog => {
+        this.dog = foundDog
+    })
     })
     jQuery('.modal').hide()
   }

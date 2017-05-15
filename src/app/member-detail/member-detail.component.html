@@ -10,36 +10,36 @@
       <p class="panel-heading">
         {{dog.name}} - <small>{{dog.rank}}</small>
       </p>
-      <a class="panel-block is-active">
+      <label class="panel-block is-active">
         <span class="panel-icon">
           <i class="fa fa-paw"></i>
         </span>
         Breed: {{dog.breed}}
-      </a>
-      <a class="panel-block">
+      </label>
+      <label class="panel-block is-danger">
         <span class="panel-icon">
           <i class="fa fa-paw"></i>
         </span>
         Age: {{dog.age}}
-      </a>
-      <a class="panel-block">
+      </label>
+      <label class="panel-block  is-info">
         <span class="panel-icon">
           <i class="fa fa-paw"></i>
         </span>
         Location: {{dog.location}}
-      </a>
-      <a class="panel-block">
+      </label>
+      <label class="panel-block">
         <span class="panel-icon">
           <i class="fa fa-paw"></i>
         </span>
         {{dog.bio}}
-      </a>
-      <a class="panel-block">
+      </label>
+      <label class="panel-block">
         <span class="panel-icon">
           <i class="fa fa-calendar-o"></i>
         </span>
         Joined: {{dog.joined}}
-      </a>
+      </label>
       <div class="panel-block">
         <button (click)="toggleEditModal()" class="button is-primary is-outlined is-fullwidth">
           Edit {{dog.name}}
@@ -63,6 +63,6 @@
     <section class="modal-card-body">
       <app-member-edit></app-member-edit>
     </section>
-    
+
   </div>
 </div>
