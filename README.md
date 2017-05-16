@@ -48,14 +48,14 @@ Beginning Expectations
 * ~~As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.~~
 * As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.
 * ~~As a user, I'd like all data persisted in a database, so it's always there when I need it.~~
-* As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something other than role, if it's more relevant to your project.)
+* ~~As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something other than role, if it's more relevant to your project.)~~
 * ~~As an administrator, I want to add new users to the club. (User authentication is not required).~~
 * ~~As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.~~
 * ~~As an administrator, need the option to delete a user, in case they leave the club or team.~~
 
 Further Exploration
 ------
-* Add functionality to keep track of stats, if relevant. Is your roster for a sports club? Keep track of the individual players' scoring percentage. An extracurricular course or seminar? Keep track of attendance or grades. A hiking group? Keep track of the number of miles each person has hiked with the club, etc.
+* ~~Add functionality to keep track of stats, if relevant. Is your roster for a sports club? Keep track of the individual players' scoring percentage. An extracurricular course or seminar? Keep track of attendance or grades. A hiking group? Keep track of the number of miles each person has hiked with the club, etc.~~
 * Add a message board area, where club members may chat with each other.
 * Include an area called "announcements", "events", "games", etc. where users can post what events, matches, or meetings the club has planned.
 * Deploy your application. Include a link to the live site in your project's README.
@@ -69,7 +69,7 @@ General Objectives
 * ~~A service shares data between multiple components.~~
 * ~~Application can create, edit, and delete instances of a model, persisting all changes in Firebase.~~
 * ~~Data is retrieved from Firebase and displayed in the application.~~
-* Models can be filtered using a custom pipe.
+* ~~Models can be filtered using a custom pipe.~~
 
 ---
 
@@ -93,8 +93,8 @@ General Objectives
   * Firebase auth?
 8. Event? component
 9. Pipes
-  * Filter by role
-  * Filter by age
+  * ~~Filter by role~~
+  * ~~Filter by age~~
   * Filter by joined?
 
 #### Styling
