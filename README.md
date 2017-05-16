@@ -6,6 +6,8 @@
 
 A place for the highest members of society to gather and discuss the finer points of eating poop. Featuring Society management, member info, and a discussion board.
 
+Live hosted [at my domain](http://40two.net/sodwep)
+
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 * To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
