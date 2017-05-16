@@ -18,6 +18,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MemberEditComponent } from './member-edit/member-edit.component';
 import { MemberNewComponent } from './member-new/member-new.component';
 import { ListFilterPipe } from './list-filter.pipe';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     WelcomePageComponent,
     MemberEditComponent,
     MemberNewComponent,
-    ListFilterPipe
+    ListFilterPipe,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
