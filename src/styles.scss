@@ -9,7 +9,7 @@
    width: 90%;
  }
 
-body {
+html, body {
   background:
   linear-gradient(
     rgba(128, 128, 128, 0.45),
@@ -17,7 +17,12 @@ body {
   ),
   url('http://cdn2.irishviews.com/irishviews-cdn/black-and-white/grass-lawn3.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
 }
 
 .menu a {
