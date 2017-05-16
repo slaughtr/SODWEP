@@ -49,9 +49,9 @@ Beginning Expectations
 * As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.
 * ~~As a user, I'd like all data persisted in a database, so it's always there when I need it.~~
 * As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something other than role, if it's more relevant to your project.)
-* As an administrator, I want to add new users to the club. (User authentication is not required).
+* ~~As an administrator, I want to add new users to the club. (User authentication is not required).~~
 * ~~As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.~~
-* As an administrator, need the option to delete a user, in case they leave the club or team.
+* ~~As an administrator, need the option to delete a user, in case they leave the club or team.~~
 
 Further Exploration
 ------
@@ -67,7 +67,7 @@ General Objectives
 * ~~Components are used to create display and behavior for templates.~~
 * ~~A router is used to navigate between different pages, including at least one dynamic route.~~
 * ~~A service shares data between multiple components.~~
-* Application can create, edit, and delete instances of a model, persisting all changes in Firebase.
+* ~~Application can create, edit, and delete instances of a model, persisting all changes in Firebase.~~
 * ~~Data is retrieved from Firebase and displayed in the application.~~
 * Models can be filtered using a custom pipe.
 
@@ -84,8 +84,8 @@ General Objectives
   * ~~Member list~~
   * ~~Member detail~~
   * Discussion board (probably several components needed here, lower priority)
-  * Member new
-  * Member edit
+  * ~~Member new~~
+  * ~~Member edit~~
 6. Router
   * About page
   * Discussion board

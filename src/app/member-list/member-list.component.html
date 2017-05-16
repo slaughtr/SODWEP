@@ -1,5 +1,15 @@
+<div class="tabs is-centered">
+  <ul>
+    <li><a (click)="appliedFilter = 'all'">All</a></li>
+    <li><a (click)="appliedFilter = 'highranks'">High Ranking Members</a></li>
+    <li><a (click)="appliedFilter = 'lowranks'">Low Ranking Members</a></li>
+    <li><a (click)="appliedFilter = 'young'">Young Members</a></li>
+    <li><a (click)="appliedFilter = 'old'">Old Members</a></li>
+  </ul>
+</div>
+
 <div class="tile is-ancestor">
-  <div *ngFor="let dog of dogs | async" class="eachDogTile">
+  <div *ngFor="let dog of dogs | listFilter:appliedFilter" class="eachDogTile">
     <div class="card columns">
       <div class="card-image column">
         <figure class="image">
