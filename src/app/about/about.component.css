@@ -5,10 +5,26 @@
 }
 
 #title {
-  margin-left: 30%;
+  text-align: center;
+  font-size: 24pt;
 }
 
-#body {
+.bodyTop {
   margin: 3%;
   margin-top: -2%;
+}
+
+.bodyBottom {
+  margin: 3%;
+  padding-right: 2%;
+}
+
+.emphasis {
+  font-weight: bolder;
+  margin: 4%;
+}
+
+p {
+  text-align: center;
+
 }
